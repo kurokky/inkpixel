@@ -1,0 +1,100 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "About Ink/Pixel"
+msgstr "Ink/Pixelについて"
+
+msgid "For more detailed instructions, please visit the my website below."
+msgstr "詳しい使い方は以下の公式サイトをご覧ください。"
+
+msgid "Create Layer"
+msgstr "レイヤーを作成"
+
+msgid "Split by Color"
+msgstr "不要なドットを削除し色で分割したレイヤーを作成"
+
+msgid "Analyze"
+msgstr "ドットを数える"
+
+msgid "Pixel Size: Other"
+msgstr "ドットの大きさ: その他"
+
+msgid "Adjust to Grid Size"
+msgstr "グリッドサイズに合わせる"
+
+msgid "Manual"
+msgstr "自分で入力"
+
+msgid "Toggle numbers"
+msgstr "行列番号の表示・非表示"
+
+msgid "Clean Up"
+msgstr "不要なドットを削除し1つのレイヤーを作成"
+
+msgid "Ignore alpha"
+msgstr "アルファ値は無視されます"
+
+msgid "Replace Color"
+msgstr "色を置換"
+
+msgid "Pixel Size: Cross stitch(fabric count)"
+msgstr "ドットの大きさ: クロスステッチ用(布目数)"
+
+msgid "Pixel Size: mm"
+msgstr "ドットの大きさ: mm"
+
+msgid "Pixel Size: Beads"
+msgstr "ドットの大きさ: アイロンビーズ用"
+
+msgid "Are you sure? The current data will be deleted."
+msgstr "現在のデータは削除されますが、よろしいですか？"
+
+msgid "Top"
+msgstr "上"
+
+msgid "Bottom"
+msgstr "下"
+
+msgid "Left"
+msgstr "左"
+
+msgid "Right"
+msgstr "右"
+
+msgid "add"
+msgstr "追加"
+
+msgid "delete"
+msgstr "削除"
+
+msgid "(Cols/Rows) number:"
+msgstr "（行/列） 数"
+
+msgid "Change the document size?"
+msgstr "ドキュメントサイズを変更しますか？"
+
+msgid "Edit Rows and Columns"
+msgstr "ドットの行/列を変更"
+
+msgid "14 spi(1.8mm)"
+msgstr "14カウント / 1インチ (1.8mm)"
+
+msgid " 8 spi(3.2mm)"
+msgstr " 8カウント / 1インチ (3.2mm)"
+
+msgid "18 spi(1.4mm)"
+msgstr "18カウント / 1インチ (1.4mm)"
+
+msgid "16 spi(1.6mm)"
+msgstr "16カウント / 1インチ (1.6mm)"
+
+msgid "11 spi(2.3mm)"
+msgstr "11カウント / 1インチ (2.3mm)"
+
+msgid " 6 spi(4.2mm)"
+msgstr " 6カウント / 1インチ (4.2mm)"
+
+
+

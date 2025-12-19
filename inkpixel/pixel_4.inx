@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+<inkscape-extension  translationdomain="inkpixel" xmlns="http://www.inkscape.org/namespace/inkscape/extension">
     <name> 4mm</name>
     <id>net.black-tree.cs.dot.4mm</id>
     <dependency type="executable" location="extensions">pixel_manage_main.py</dependency>

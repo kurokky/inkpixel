@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+<inkscape-extension  translationdomain="inkpixel" xmlns="http://www.inkscape.org/namespace/inkscape/extension">
     <name>About Ink/Pixel</name>
     <id>net.black-tree.pixel._about</id>
     <param name="active-tab" type="notebook">
         <page name="options" gui-text="About">
             <label appearance="header">Ink/Pixel for Inkscape</label>
-            <label>Version 0.0.0.2</label>
+            <label>Version 0.0.0.3</label>
         </page>
         <page name="help" gui-text="Support">
             <label appearance="header">Support</label>
             <label>For more detailed instructions, please visit the my website below.</label>
-            <label>詳しい使い方は以下の公式サイトをご覧ください。</label>
             <separator />
             <label>GitHub:</label>
             <label appearance="url">https://kurokky.github.io/cross_stitch/</label>
