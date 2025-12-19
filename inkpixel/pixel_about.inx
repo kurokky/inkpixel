@@ -5,7 +5,7 @@
     <param name="active-tab" type="notebook">
         <page name="options" gui-text="About">
             <label appearance="header">Ink/Pixel for Inkscape</label>
-            <label>Version 0.0.0.3</label>
+            <label>Version 0.0.0.4</label>
         </page>
         <page name="help" gui-text="Support">
             <label appearance="header">Support</label>

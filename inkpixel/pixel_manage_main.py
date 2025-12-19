@@ -81,7 +81,7 @@ class DotManageMain(inkex.EffectExtension):
             style = node.style
             fill = style.get('fill')
             
-            is_alpha_gradient = (fill is not None) and ('url(#radialGradient_white_alpha' in fill)
+            is_alpha_gradient = (fill is not None) and ( ('url(#radialGradient_white_alpha' in fill) or ('url(#linearGradient' in fill) or ('url(#mesh' in fill))
             has_no_fill = (fill is None) or (fill == 'none') or is_alpha_gradient
 
             if not has_no_fill:
@@ -308,7 +308,7 @@ class DotManageMain(inkex.EffectExtension):
             fill = style.get('fill')
             
             # 特定のグラデーションURLが含まれているか判定
-            is_alpha_gradient = (fill is not None) and ('url(#radialGradient_white_alpha' in fill)
+            is_alpha_gradient = (fill is not None) and ( ('url(#radialGradient_white_alpha' in fill) or ('url(#linearGradient' in fill) or ('url(#mesh' in fill))
             
             # 除外対象のFill判定 (None, 'none', または透明グラデーション)
             has_no_fill = (fill is None) or (fill == 'none') or is_alpha_gradient
@@ -334,7 +334,7 @@ class DotManageMain(inkex.EffectExtension):
             fill = style.get('fill')
             
             # 特定のグラデーションURLが含まれているか判定
-            is_alpha_gradient = (fill is not None) and ('url(#radialGradient_white_alpha' in fill)
+            is_alpha_gradient = (fill is not None) and ( ('url(#radialGradient_white_alpha' in fill) or ('url(#linearGradient' in fill) or ('url(#mesh' in fill))
             
             # Fillの状態を判定 (None, 'none', または透明グラデーション)
             has_no_fill = (fill is None) or (fill == 'none') or is_alpha_gradient
