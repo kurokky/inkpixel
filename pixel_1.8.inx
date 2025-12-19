@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>14 spi(1.8mm)</name>
+    <id>net.black-tree.cs.dot.1.8mm</id>
+    <dependency type="executable" location="extensions">pixel_manage_main.py</dependency>
+    <param name="command" type="string" gui-hidden="true">size</param>
+    <param name="dot_size" type="string" gui-hidden="true">1.8</param>
+    <param name="confirm_delete" type="bool" gui-text="Are you sure? The current data will be deleted.">false</param>
+    <effect needs-live-preview="false">
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="Ink/Pixel">
+                <submenu name="Pixel Size: Cross stitch(fabric count)"/>
+            </submenu>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">pixel_manage_main.py</command>
+    </script>
+</inkscape-extension>

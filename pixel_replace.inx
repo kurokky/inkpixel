@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Replace Color</name>
+    <id>net.black-tree.replace_rect_rgb</id>
+    
+    <param name="find_color" type="string" gui-text="Find Color (HEX, e.g. ff0000):">ff0000</param>
+    <param name="replace_color" type="string" gui-text="Replace Color (HEX, e.g. 0000ff):">0000ff</param>
+    <label>Ignore alpha</label>
+    <effect needs-live-preview="false">
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="Ink/Pixel"/>
+        </effects-menu>
+    </effect>
+    
+    <script>
+        <command location="inx" interpreter="python">replace_rect_rgb.py</command>
+    </script>
+</inkscape-extension>

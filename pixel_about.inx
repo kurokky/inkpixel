@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>About Ink/Pixel</name>
+    <id>net.black-tree.pixel._about</id>
+    <param name="active-tab" type="notebook">
+        <page name="options" gui-text="About">
+            <label appearance="header">Ink/Pixel for Inkscape</label>
+            <label>Version 0.0.0.1</label>
+        </page>
+        <page name="help" gui-text="Support">
+            <label appearance="header">Support</label>
+            <label>For more detailed instructions, please visit the my website below.</label>
+            <label>詳しい使い方は以下の公式サイトをご覧ください。</label>
+            <separator />
+            <label>GitHub:</label>
+            <label appearance="url">https://github.com/example/my-extension</label>
+        </page>
+    </param>
+
+    <effect needs-live-preview="false">
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="Ink/Pixel" />
+        </effects-menu>
+    </effect>
+    
+    <script>
+        <command location="inx" interpreter="python">about.py</command>
+    </script>
+</inkscape-extension>
+
+
+

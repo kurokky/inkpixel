@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Manual</name>
+    <id>net.black-tree.pixel_grid</id>
+    <dependency type="path" location="inx">pixel_grid.py</dependency>
+    <dependency type="executable" location="extensions">pixel_grid.py</dependency>
+    <param name="num_rows" type="int" min="1" max="1000" gui-text="Rows num:">10</param>
+    <param name="num_cols" type="int" min="1" max="1000" gui-text="Cols num:">10</param>
+    <param name="pixel_size" type="float" min="0.1" max="1000.0" precision="2" gui-text="Pixel size (mm):">5.0</param>
+    <param name="resize_doc" type="bool" gui-text="Change the document size.">false</param>
+    <script>
+        <command location="inx" interpreter="python">pixel_grid.py</command>
+    </script>
+    <effect needs-live-preview="false">
+        <object-type>all</object-type>
+        <effects-menu>
+        <submenu name="Ink/Pixel"> 
+            <submenu name="Pixel Size: Other"/>
+        </submenu>
+        </effects-menu>
+    </effect>
+</inkscape-extension>
