@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 import inkex
+import logging
 from inkex import Color, Rectangle
-
+import gettext as gettext_module
+_ = gettext_module.gettext
+logger = logging.getLogger(__name__)
 class ReplaceRectRGB(inkex.EffectExtension):
     def add_arguments(self, pars):
         # .inxファイルで定義したパラメータを受け取る設定
@@ -22,11 +25,12 @@ class ReplaceRectRGB(inkex.EffectExtension):
             target_color = self.get_color(self.options.find_color)
             replacement_color = self.get_color(self.options.replace_color)
         except Exception as e:
-            inkex.errormsg(f"カラー変換エラー: 入力された色を確認してください。\n詳細: {str(e)}")
+            #inkex.errormsg(_"カラー変換エラー: 入力された色を確認してください。\n詳細: {str(e)}")
+            inkex.errormsg(_("Invalid color code. Please check the input colors."))
             return
 
         if target_color is None or replacement_color is None:
-            inkex.errormsg("エラー: 色が入力されていません。")
+            inkex.errormsg(_("No color input."))
             return
 
         # 選択範囲がある場合は選択範囲内を、なければドキュメント全体を対象にする
@@ -64,7 +68,9 @@ class ReplaceRectRGB(inkex.EffectExtension):
                 pass # 色の解析に失敗した場合は無視
 
         if count == 0:
-            inkex.errormsg("該当する色の長方形は見つかりませんでした。")
+            #inkex.errormsg(f"DEBUG: type of _ is {type(_)}")
+            #inkex.errormsg(_("No pixels found to process."))
+            logger.error(_("No pixels found to process."))
 
 if __name__ == '__main__':
     ReplaceRectRGB().run()

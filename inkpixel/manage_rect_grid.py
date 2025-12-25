@@ -5,6 +5,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import inkex
 from inkex import Rectangle, Group, ShapeElement
 from utils import set_gradient_def, get_layer_or_fallback
+import gettext as gettext_module
+_ = gettext_module.gettext
+
 
 class ManageRectGrid(inkex.EffectExtension):
     def add_arguments(self, pars):
@@ -23,7 +26,7 @@ class ManageRectGrid(inkex.EffectExtension):
         rects = [node for node in layer if isinstance(node, Rectangle)]
 
         if not rects:
-            inkex.errormsg("レイヤー内にRectが見つかりません。")
+            inkex.errormsg(_("Not find rects in current layer"))
             return
 
 

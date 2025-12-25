@@ -5,6 +5,7 @@
     <dependency type="executable" location="extensions">pixel_manage_main.py</dependency>
     <param name="command" type="string" gui-hidden="true">count</param>
     <param name="dot_size" type="string" gui-hidden="true">16</param>
+    <param name="only_grid" type="bool" gui-text="Only grid">false</param>
     <param name="confirm_delete" type="bool" gui-text="Are you sure? The current data will be deleted.">false</param>
     <effect needs-live-preview="false">
         <object-type>all</object-type>

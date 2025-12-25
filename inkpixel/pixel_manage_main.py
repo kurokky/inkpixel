@@ -1,19 +1,21 @@
 #!/usr/bin/env python3
 import sys
 import os
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-
 import inkex
 from inkex import Rectangle, Group, units, TextElement
 from lxml import etree
 import math
 from utils import set_gradient_def, normalize_color, update_grid
+import gettext as gettext_module
+_ = gettext_module.gettext
+
 
 class DotManageMain(inkex.EffectExtension):
     def add_arguments(self, pars):
         pars.add_argument("--mode", type=str, default="")
         pars.add_argument("--confirm_delete", type=inkex.Boolean, default=False)
         pars.add_argument("--command", type=str, default="")
+        pars.add_argument("--only_grid", type=inkex.Boolean, default=False)
         pars.add_argument("--dot_size", type=str, default="32", help="Dot Grid Size in px")
 
     def set_gradient_def(self):
@@ -25,10 +27,8 @@ class DotManageMain(inkex.EffectExtension):
         #print(command, file=sys.stderr) # デバッグ用出力
         if command == "remove":
             self.colored_layer()
-            return
         elif command == "sep":
             self.separate_colors()
-            return
         elif command == "analyze":
             self.count_colors()
         elif command == "toggle":
@@ -37,7 +37,7 @@ class DotManageMain(inkex.EffectExtension):
             self.list_colors()
         else:
             if not self.options.confirm_delete:
-                inkex.errormsg("実行するには、設定画面でチェックボックスをオンにしてください。")
+                inkex.errormsg(_("Please enable the checkbox in the settings to run."))
                 return
             self.create_grid()
 
@@ -50,7 +50,7 @@ class DotManageMain(inkex.EffectExtension):
         """カレントレイヤーにあるRectのFillカラー一覧をポップアップ表示"""
         rects = self.get_rects()
         if not rects:
-            inkex.errormsg("Rectが見つかりませんでした。")
+            inkex.errormsg(_("Not find rects in current layer"))
             return
 
         found_colors = set()
@@ -247,6 +247,9 @@ class DotManageMain(inkex.EffectExtension):
         height = svg.viewbox_height
 
         self.update_grid(grid_size, grid_size)
+        only_grid = self.options.only_grid
+        if only_grid:
+            return
 
         layer = svg.get_current_layer()
         if layer == self.svg:

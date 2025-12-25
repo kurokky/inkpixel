@@ -2,7 +2,6 @@
 <inkscape-extension  translationdomain="inkpixel" xmlns="http://www.inkscape.org/namespace/inkscape/extension">
     <name>Replace Color</name>
     <id>net.black-tree.replace_rect_rgb</id>
-    
     <param name="find_color" type="string" gui-text="Find Color (HEX, e.g. ff0000):">ff0000</param>
     <param name="replace_color" type="string" gui-text="Replace Color (HEX, e.g. 0000ff):">0000ff</param>
     <label>Ignore alpha</label>

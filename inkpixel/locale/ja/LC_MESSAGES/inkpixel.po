@@ -51,22 +51,25 @@ msgstr "ドットの大きさ: アイロンビーズ用"
 msgid "Are you sure? The current data will be deleted."
 msgstr "現在のデータは削除されますが、よろしいですか？"
 
+msgid "Direction:"
+msgstr "方向:"
+
 msgid "Top"
-msgstr "上"
+msgstr "上側に"
 
 msgid "Bottom"
-msgstr "下"
+msgstr "下側に"
 
 msgid "Left"
-msgstr "左"
+msgstr "左側に"
 
 msgid "Right"
-msgstr "右"
+msgstr "右側に"
 
-msgid "add"
+msgid "Add"
 msgstr "追加"
 
-msgid "delete"
+msgid "Delete"
 msgstr "削除"
 
 msgid "(Cols/Rows) number:"
@@ -95,6 +98,49 @@ msgstr "11カウント / 1インチ (2.3mm)"
 
 msgid " 6 spi(4.2mm)"
 msgstr " 6カウント / 1インチ (4.2mm)"
+
+msgid "Import IBE json data"
+msgstr "IBEデータをインポート"
+
+msgid "Not find rects in current layer"
+msgstr "このレイヤーに矩形(rect)が見つかりませんでした。"
+
+msgid "No rectangles to process were found."
+msgstr "処理できる矩形がありませんでした"
+
+msgid "Combine pixel"
+msgstr "ドットを統合する"
+
+msgid "Not find json file"
+msgstr "jsonファイルが見つかりません"
+
+msgid "Grid not found in document properties."
+msgstr "ドキュメントにグリッドが指定されていません"
+
+msgid "Is this json file?"
+msgstr "jsonファイルを指定してください"
+
+msgid "Palette not found"
+msgstr "色情報が見つかりません"
+
+msgid "Please enable the checkbox in the settings to run."
+msgstr "実行するには、設定画面でチェックボックスをオンにしてください。"
+
+msgid "No color input."
+msgstr "色が入力されていません。"
+
+msgid "Invalid color code. Please check the input colors."
+msgstr "無効なカラーコードです。"
+
+msgid "Replace color failed."
+msgstr "色の置換に失敗しました。"
+
+msgid "No pixels found to process."
+msgstr "処理するドットが見つかりません。"
+
+msgid "Only grid"
+msgstr "グリッドのみ作成"
+
 
 
 

@@ -6,7 +6,7 @@
     <param name="command" type="string" gui-hidden="true">count</param>
     <param name="dot_size" type="string" gui-hidden="true">0</param>
     <param name="confirm_delete" type="bool" gui-text="Are you sure? The current data will be deleted.">false</param>
-    <effect>
+    <effect needs-live-preview="false">
         <object-type>all</object-type>
         <effects-menu>
             <submenu name="Ink/Pixel">

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension translationdomain="inkpixel" xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Combine pixel</name>
+    <id>net.black-tree.cs.dot.grid.color_combine</id>
+     <effect needs-live-preview="false">
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="Ink/Pixel">
+                <submenu name="Create Layer" />
+            </submenu>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">color_combine.py</command>
+    </script>
+</inkscape-extension>

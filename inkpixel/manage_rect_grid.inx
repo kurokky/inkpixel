@@ -3,20 +3,18 @@
     <name>Edit Rows and Columns</name>
     <id>net.black-tree.manage_rect_grid</id>
     <param name="direction" type="optiongroup" appearance="combo" gui-text="Direction:">
-        <option value="top">Top</option>
-        <option value="bottom">Bottom</option>
-        <option value="left">Left</option>
-        <option value="right">Right</option>
+        <option value="top" translatable="yes">Top</option>
+        <option value="bottom" translatable="yes">Bottom</option>
+        <option value="left" translatable="yes">Left</option>
+        <option value="right" translatable="yes">Right</option>
     </param>
-    
     <param name="amount" type="int" min="1" max="100" gui-text="(Cols/Rows) number:">1</param>
-    
     <param name="mode" type="optiongroup" appearance="combo" gui-text="Action:">
-        <option value="add">Add</option>
-        <option value="delete">Delete</option>
+        <option value="add" translatable="yes">Add</option>
+        <option value="delete" translatable="yes">Delete</option>
     </param>
     <param name="resize_doc" type="bool" gui-text="Change the document size?">false</param>
-    <effect>
+    <effect needs-live-preview="false">
         <object-type>all</object-type>
         <effects-menu>
             <submenu name="Ink/Pixel"/>
