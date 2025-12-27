@@ -105,8 +105,8 @@ class Ibe(inkex.EffectExtension):
                 rect.set('id', f'grid_{size_px}_{r}_{c}')
 
         if self.options.resize_doc:
-            self.svg.set('width', f'{total_width}')
-            self.svg.set('height', f'{total_height}')
+            self.svg.set('width', f'{total_width}mm')
+            self.svg.set('height', f'{total_height}mm')
             self.svg.set('viewBox', f'0 0 {total_width} {total_height}')
 
 
